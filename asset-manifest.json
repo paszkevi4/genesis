@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/genesis/static/css/main.c6285e94.chunk.css",
+    "main.js": "/genesis/static/js/main.71c7f3d9.chunk.js",
+    "main.js.map": "/genesis/static/js/main.71c7f3d9.chunk.js.map",
+    "runtime-main.js": "/genesis/static/js/runtime-main.60098737.js",
+    "runtime-main.js.map": "/genesis/static/js/runtime-main.60098737.js.map",
+    "static/js/2.c63c96c5.chunk.js": "/genesis/static/js/2.c63c96c5.chunk.js",
+    "static/js/2.c63c96c5.chunk.js.map": "/genesis/static/js/2.c63c96c5.chunk.js.map",
+    "static/js/3.99a49ede.chunk.js": "/genesis/static/js/3.99a49ede.chunk.js",
+    "static/js/3.99a49ede.chunk.js.map": "/genesis/static/js/3.99a49ede.chunk.js.map",
+    "index.html": "/genesis/index.html",
+    "static/css/main.c6285e94.chunk.css.map": "/genesis/static/css/main.c6285e94.chunk.css.map",
+    "static/js/2.c63c96c5.chunk.js.LICENSE.txt": "/genesis/static/js/2.c63c96c5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60098737.js",
+    "static/js/2.c63c96c5.chunk.js",
+    "static/css/main.c6285e94.chunk.css",
+    "static/js/main.71c7f3d9.chunk.js"
+  ]
+}
