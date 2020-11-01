@@ -14,9 +14,7 @@ function App() {
         <AppBar position="static">
           <Toolbar>
             <Link className="header-link" to="/">
-              <Typography color="#fff" variant="h6">
-                Home
-              </Typography>
+              <Typography variant="h6">Home</Typography>
             </Link>
           </Toolbar>
         </AppBar>
