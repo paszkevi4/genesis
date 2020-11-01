@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { getPlanets } from '../api/api';
 
+import LinearProgress from '@material-ui/core/LinearProgress';
+
 const Planets = () => {
   const [planets, setPlanets] = useState(null);
   // delete
@@ -11,8 +13,7 @@ const Planets = () => {
   }, []);
   return (
     <div>
-      Planets
-      {planets &&
+      {planets ? (
         planets.map(planet => {
           return (
             <Link
@@ -26,8 +27,10 @@ const Planets = () => {
               <p>{planet.population}</p>
             </Link>
           );
-        })}
-      <NavLink to="/characters">characters</NavLink>
+        })
+      ) : (
+        <LinearProgress color="secondary" />
+      )}
     </div>
   );
 };
