@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/genesis/static/css/main.c6285e94.chunk.css",
-    "main.js": "/genesis/static/js/main.fd64a96a.chunk.js",
-    "main.js.map": "/genesis/static/js/main.fd64a96a.chunk.js.map",
+    "main.js": "/genesis/static/js/main.e8305ba9.chunk.js",
+    "main.js.map": "/genesis/static/js/main.e8305ba9.chunk.js.map",
     "runtime-main.js": "/genesis/static/js/runtime-main.60098737.js",
     "runtime-main.js.map": "/genesis/static/js/runtime-main.60098737.js.map",
     "static/js/2.2ba0b60f.chunk.js": "/genesis/static/js/2.2ba0b60f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.60098737.js",
     "static/js/2.2ba0b60f.chunk.js",
     "static/css/main.c6285e94.chunk.css",
-    "static/js/main.fd64a96a.chunk.js"
+    "static/js/main.e8305ba9.chunk.js"
   ]
 }
