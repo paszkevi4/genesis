@@ -18,28 +18,18 @@ const Planets = () => {
   return (
     <div>
       {!planets && <LinearProgress color="secondary" />}
-      <Grid container spacing={1}>
+      <div className="main__grid">
         {planets?.map(planet => {
           return (
-            // <Link
-            //   key={planet.name}
-            //   to={{
-            //     pathname: `/planet/${planet.name}`,
-            //     state: { link: planet.url },
-            //   }}>
             <PlanetCard
               name={planet.name}
               climate={planet.climate}
               population={planet.population}
               link={planet.url}
             />
-            //<p>{planet.name}</p>
-            //<p>{planet.climate}</p>
-            //<p>{planet.population}</p>
-            // </Link>
           );
         })}
-      </Grid>
+      </div>
     </div>
   );
 };
