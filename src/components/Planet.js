@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 
+import Grid from '@material-ui/core/Grid';
+
 const Planet = props => {
   const [planet, setPlanet] = useState(null);
   //let residents = [];
@@ -41,15 +43,16 @@ const Planet = props => {
   window.residents = residents;
 
   return (
-    <div>
-      <span>{planet && planet.name}</span>
-      <span>
-        {residents &&
-          residents.map((resident, i) => {
-            return <p>{resident.name}</p>;
-          })}
-      </span>
-    </div>
+    <Grid container spacing={3}>
+      <Grid item xs={12} sm={6}>
+        {`Short info about ${planet?.name}:`}
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        {residents?.map((resident, i) => {
+          return <p>{resident.name}</p>;
+        })}
+      </Grid>
+    </Grid>
   );
 };
 

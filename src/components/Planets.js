@@ -4,6 +4,10 @@ import { getPlanets } from '../api/api';
 
 import LinearProgress from '@material-ui/core/LinearProgress';
 
+import PlanetCard from './PlanetCard';
+
+import Grid from '@material-ui/core/Grid';
+
 const Planets = () => {
   const [planets, setPlanets] = useState(null);
   // delete
@@ -13,24 +17,29 @@ const Planets = () => {
   }, []);
   return (
     <div>
-      {planets ? (
-        planets.map(planet => {
+      {!planets && <LinearProgress color="secondary" />}
+      <Grid container spacing={1}>
+        {planets?.map(planet => {
           return (
-            <Link
-              key={planet.name}
-              to={{
-                pathname: `/planet/${planet.name}`,
-                state: { link: planet.url },
-              }}>
-              <p>{planet.name}</p>
-              <p>{planet.climate}</p>
-              <p>{planet.population}</p>
-            </Link>
+            // <Link
+            //   key={planet.name}
+            //   to={{
+            //     pathname: `/planet/${planet.name}`,
+            //     state: { link: planet.url },
+            //   }}>
+            <PlanetCard
+              name={planet.name}
+              climate={planet.climate}
+              population={planet.population}
+              link={planet.url}
+            />
+            //<p>{planet.name}</p>
+            //<p>{planet.climate}</p>
+            //<p>{planet.population}</p>
+            // </Link>
           );
-        })
-      ) : (
-        <LinearProgress color="secondary" />
-      )}
+        })}
+      </Grid>
     </div>
   );
 };
