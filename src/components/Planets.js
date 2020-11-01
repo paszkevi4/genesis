@@ -1,19 +1,18 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import { getPlanets } from '../api/api';
 
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 import PlanetCard from './PlanetCard';
 
-import Grid from '@material-ui/core/Grid';
-
 const Planets = () => {
   const [planets, setPlanets] = useState(null);
+  const [page, setPage] = useState(1);
   // delete
   window.planets = planets;
   useEffect(() => {
-    getPlanets().then(response => setPlanets(response.results));
+    fetch(`https://swapi.dev/api/planets/?page=${page}`)
+      .then(res => res.json())
+      .then(res => setPlanets(res.results));
   }, []);
   return (
     <div>
